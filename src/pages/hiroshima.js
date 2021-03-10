@@ -8,7 +8,7 @@ import hiroshimaAfter from "../images/hiroshimaAfter.JPG";
 const hiroshima = () => {
   return (
     <HiroshimaPage>
-      <h1>Nagasaki before and after</h1>
+      <h1>Hiroshima before and after</h1>
       <ImageBeforeAndAfter before={hiroshimaBefore} after={hiroshimaAfter} />
     </HiroshimaPage>
   );
@@ -19,6 +19,7 @@ const HiroshimaPage = styled.div`
   justify-content: center;
   align-items: Center;
   flex-direction: column;
+  text-align: center;
 `;
 
 export default hiroshima;

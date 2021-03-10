@@ -10,7 +10,7 @@ import nagasakiAfter from "../images/nagasakiAfter.jpg";
 const nagasaki = () => {
   return (
     <NagasakiPage>
-      <h1>Hiroshima before and after</h1>
+      <h1>Nagasaki before and after</h1>
       <ImageBeforeAndAfter before={nagasakiBefore} after={nagasakiAfter} />
     </NagasakiPage>
   );
@@ -21,6 +21,7 @@ const NagasakiPage = styled.div`
   justify-content: center;
   align-items: Center;
   flex-direction: column;
+  text-align: center;
 `;
 
 export default nagasaki;

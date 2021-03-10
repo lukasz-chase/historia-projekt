@@ -37,20 +37,32 @@ const Container = styled.div`
     position: relative;
     width: 30vw;
     height: 80vh;
+    @media screen and (max-width:1000px){
+     width:40vh;
+    }
     .img-container-before,
     .img-container-after {
       position: absolute;
       width: 30vw;
       height: 80vh;
+      @media screen and (max-width:1000px){
+     width:40vh;
+    }
       img {
         width: 30vw;
         height: 80vh;
         object-fit: cover;
+        @media screen and (max-width:1000px){
+     width:40vh;
+    }
       }
     }
     .img-container-before {
       width: 15vw;
       overflow: hidden;
+      @media screen and (max-width:1000px){
+     width:20vh;
+    }
     }
   }
   .slider {
@@ -63,6 +75,9 @@ const Container = styled.div`
     left: 50%;
     transform: translate(-50%, 0%);
     pointer-events: none;
+    @media screen and (max-width:1000px){
+      width:0.2rem;
+    }
   .slider-icon{
       background-color:white;
       border-radius:1rem;
@@ -71,6 +86,9 @@ const Container = styled.div`
     top:50%;
     left:50%;
     transform: translate(-50%, 50%);
+    @media screen and (max-width:1000px){
+      font-size:2rem;
+    }
   }
 `;
 

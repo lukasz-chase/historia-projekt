@@ -28,6 +28,9 @@ const NavComponent = styled.nav`
     color: white;
     text-decoration: none;
     font-size: 2rem;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.5rem;
+    }
     &:hover {
       text-decoration: underline;
     }
