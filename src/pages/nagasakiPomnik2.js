@@ -1,31 +1,10 @@
 import React from "react";
 //styled
 import styled from "styled-components";
-//components
-import ImageBeforeAndAfter from "../components/ImageBeforeAndAfter";
-//images
-import nagasakiBefore from "../images/nagasakiBefore.jpg";
-import nagasakiAfter from "../images/nagasakiAfter.jpg";
 
-const nagasaki = () => {
+const NagasakiPomnik2 = () => {
   return (
     <NagasakiPage>
-      <h1>Nagasaki before and after</h1>
-      <ImageBeforeAndAfter before={nagasakiBefore} after={nagasakiAfter} />
-      <h2>pomnik1</h2>
-      <div className="text">
-        Pomnik "Kwiat życia i pokoju" Również znany pod nazwą Pomniku Ofiar
-        Nagasaki autorstwa Polaka Mariusza Kulpy, replika zrealizowanego pomnika
-        Dar Narodu Polskiego odsłoniętego w 1986 roku w Nagasaki,
-        upamiętniającego ofiary bomby atomowej z 1945 roku. Replika została
-        odsłonięta 9 VIII 1988 roku na skwerze między ulicami Szeroką i Św
-        Ducha, przedstawia metalową rzeźbę o wysokości 2m, w formie
-        skamieniałych liści symbolizujących zagłądę oraz wyrastającym nowym
-        kwiatem symbolem życia i odrodzenia. Początkowo przeznaczony do
-        Warszawy, ostatecznie stanął w Gdańku, portowym mieście, w którym 2WŚ
-        się rozpoczełą, zakończyła się natomiast w Nagasaki, innym portowym
-        mieście.
-      </div>
       <h2>pomnik2</h2>
       <div className="text">
         Park Pokoju w Nagasaki` Założony w 1955 zlokalizowany w pobliżu
@@ -63,4 +42,4 @@ const NagasakiPage = styled.div`
   }
 `;
 
-export default nagasaki;
+export default NagasakiPomnik2;
