@@ -27,7 +27,7 @@ const Nav = () => {
       <div className="nav-logo">
         <span>
           <Link to="/" className="nav-link">
-            About
+            O projekcie
           </Link>
         </span>
       </div>

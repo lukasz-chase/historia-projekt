@@ -1,14 +1,13 @@
 import React from "react";
 //styling
 import styled from "styled-components";
-const About = () => {
+const Projekt = () => {
   return (
     <AboutComponent>
       <span>
-        This is a project, memorizing terrible things that happened during WWII
-        in Nagasaki and Hiroshima, it was created by <b>Łukasz Ścigaj</b>,{" "}
-        <b>Mateusz Ogiegło</b>, <b>Bartosz Piechowicz</b>, <b>Marcel Wójcik</b>{" "}
-        and <b>Ernest Cebula</b>.
+        Jest to projekt upamietniajacy straszne rzeczy ktore zrobili{" "}
+        <b>Łukasz Ścigaj</b>, <b>Mateusz Ogiegło</b>, <b>Bartosz Piechowicz</b>,{" "}
+        <b>Marcel Wójcik</b> and <b>Ernest Cebula</b>.
       </span>
     </AboutComponent>
   );
@@ -34,4 +33,4 @@ const AboutComponent = styled.div`
   }
 `;
 
-export default About;
+export default Projekt;

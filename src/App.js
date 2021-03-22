@@ -9,7 +9,7 @@ import NagasakiPomnik2 from "./pages/nagasakiPomnik2";
 //react router
 import { Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import About from "./pages/about";
+import Projekt from "./pages/oProjekcie";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <GlobalStyles />
       <Nav />
       <Route path="/" exact>
-        <About />
+        <Projekt />
       </Route>
       <Route path="/hiroshima/pomnik1" exact>
         <HiroshimaPomnik1 />

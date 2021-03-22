@@ -10,12 +10,12 @@ const NagasakiDropdown = ({ link1, link2, text1, text2 }) => {
       <ul>
         <li>
           <Link to="/nagasaki/pomnik1" className="link">
-            pomnik1
+            Kwiat zycia i pokoju
           </Link>
         </li>
         <li>
           <Link to="/nagasaki/pomnik2" className="link">
-            pomnik2
+            Statula pokoju
           </Link>
         </li>
         <li>
