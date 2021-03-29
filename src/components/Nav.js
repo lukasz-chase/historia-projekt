@@ -57,11 +57,13 @@ const Nav = () => {
             toggle={nagasakiToggle}
             setMenu={setMenu}
             setToggle={setNagasakiToggle}
-            text1="pomnik1"
-            text2="pomnik2"
-            link1="/nagasaki/pomnik1"
-            link2="/nagasaki/pomnik2"
-            link3="/nagasaki/galeria"
+            text1="Kwiat życia i śmierci"
+            text2="Statuła pokoju"
+            text3="Muzeum"
+            link1="/nagasaki/kwiat-zycia-i-smierci"
+            link2="/nagasaki/pomnik-pokoju"
+            link3="/nagasaki/muzeum"
+            link4="/nagasaki/galeria"
           />
         )}
         <li
@@ -82,11 +84,13 @@ const Nav = () => {
             toggle={hiroshimaToggle}
             setToggle={setHiroshimaToggle}
             setMenu={setMenu}
-            text1="pomnik1"
-            text2="pomnik2"
-            link1="/hiroshima/pomnik1"
-            link2="/hiroshima/pomnik2"
-            link3="/hiroshima/galeria"
+            text1="Sadako sasaki"
+            text2="Pomnik pokoju"
+            text3="Muzeum pokoju"
+            link1="/hiroshima/sadako-sasaki"
+            link2="/hiroshima/pomnik-pokoju"
+            link3="/hiroshima/muzeum"
+            link4="/hiroshima/galeria"
           />
         )}
       </ul>

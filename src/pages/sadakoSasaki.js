@@ -2,10 +2,10 @@ import React from "react";
 //styling
 import styled from "styled-components";
 
-const HiroshimaPomnik1 = () => {
+const SadakoSasaki = () => {
   return (
     <HiroshimaPage>
-      <h2>pomnik 1</h2>
+      <h2>Sadako Sasaki</h2>
       <div className="text">
         Sadako W 1958 roku powstał pomnik Sadako Sasaki, japońskiej dziewczynki
         która w wieku 2 lat przeżyła wybuch bobmy atomowej zrzuconej na
@@ -34,7 +34,9 @@ const HiroshimaPage = styled.div`
   .text {
     width: 90%;
     padding: 1rem 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
   }
 `;
 
-export default HiroshimaPomnik1;
+export default SadakoSasaki;

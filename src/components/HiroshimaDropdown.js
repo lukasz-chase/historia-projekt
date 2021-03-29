@@ -9,13 +9,18 @@ const HiroshimaDropdown = () => {
     <DropdownComponent>
       <ul>
         <li>
-          <Link to="/hiroshima/pomnik1" className="link">
+          <Link to="/hiroshima/sadako-sasaki" className="link">
             Sadako Sasaki
           </Link>
         </li>
         <li>
-          <Link to="/hiroshima/pomnik2" className="link">
+          <Link to="/hiroshima/pomnik-pokoju" className="link">
             Pomnik pokoju
+          </Link>
+        </li>
+        <li>
+          <Link to="/hiroshima/muzeum" className="link">
+            Muzeum pokoju
           </Link>
         </li>
         <li>

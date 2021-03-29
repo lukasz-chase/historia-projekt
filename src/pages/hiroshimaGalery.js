@@ -10,7 +10,7 @@ import hiroshimaAfter from "../images/hiroshimaAfter.JPG";
 const About = () => {
   return (
     <AboutComponent>
-      <h1>Hiroshima before and after</h1>
+      <h1>Hiroshima przed i po</h1>
       <ImageBeforeAndAfter before={hiroshimaBefore} after={hiroshimaAfter} />
     </AboutComponent>
   );

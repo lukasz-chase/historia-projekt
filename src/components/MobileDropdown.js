@@ -13,6 +13,8 @@ const MobileDropdown = ({
   link3,
   text1,
   text2,
+  text3,
+  link4,
 }) => {
   const clickHandler = () => {
     setMenu(false);
@@ -33,6 +35,11 @@ const MobileDropdown = ({
         </li>
         <li>
           <Link to={link3} onClick={() => clickHandler()} className="link">
+            {text3}
+          </Link>
+        </li>
+        <li>
+          <Link to={link4} onClick={() => clickHandler()} className="link">
             galeria
           </Link>
         </li>

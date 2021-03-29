@@ -2,10 +2,10 @@ import React from "react";
 //styled
 import styled from "styled-components";
 
-const NagasakiPomnik2 = () => {
+const NagasakiPomnikPokoju = () => {
   return (
     <NagasakiPage>
-      <h2>pomnik2</h2>
+      <h2>Statuła pokoju</h2>
       <div className="text">
         Park Pokoju w Nagasaki` Założony w 1955 zlokalizowany w pobliżu
         hipocentrum eksplozji, w parku znajduje się 10-metrowa statuła Pokoju. W
@@ -39,7 +39,9 @@ const NagasakiPage = styled.div`
   .text {
     width: 90%;
     padding: 1rem 0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
   }
 `;
 
-export default NagasakiPomnik2;
+export default NagasakiPomnikPokoju;

@@ -9,13 +9,18 @@ const NagasakiDropdown = ({ link1, link2, text1, text2 }) => {
     <DropdownComponent>
       <ul>
         <li>
-          <Link to="/nagasaki/pomnik1" className="link">
-            Kwiat zycia i pokoju
+          <Link to="/nagasaki/kwiat-zycia-i-smierci" className="link">
+            Kwiat życia i pokoju
           </Link>
         </li>
         <li>
-          <Link to="/nagasaki/pomnik2" className="link">
-            Statula pokoju
+          <Link to="/nagasaki/pomnik-pokoju" className="link">
+            Statuła pokoju
+          </Link>
+        </li>
+        <li>
+          <Link to="/nagasaki/muzeum" className="link">
+            Muzeum historyczne w nagasaki
           </Link>
         </li>
         <li>

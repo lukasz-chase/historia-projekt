@@ -2,10 +2,12 @@
 import HiroshimaGalery from "./pages/hiroshimaGalery";
 import NagasakiGalery from "./pages/nagasakiGalery";
 import GlobalStyles from "./components/GlobalStyles";
-import HiroshimaPomnik1 from "./pages/hiroshimaPomnik1";
-import HiroshimaPomnik2 from "./pages/hiroshimaPomnik2";
-import NagasakiPomnik1 from "./pages/nagasakiPomnik1";
-import NagasakiPomnik2 from "./pages/nagasakiPomnik2";
+import SadakoSasaki from "./pages/sadakoSasaki";
+import HiroshimaPomnikPokoju from "./pages/hiroshimaPomnikPokoju";
+import HiroshimaMuzeum from "./pages/hiroshimaMuzeum";
+import KwiatZycia from "./pages/nagasakiKwiat";
+import NagasakiPomnikPokoju from "./pages/nagasakiPomnikPokoju";
+import NagasakiMuzeum from "./pages/nagasakiMuzeum";
 //react router
 import { Route } from "react-router-dom";
 import Nav from "./components/Nav";
@@ -19,23 +21,29 @@ function App() {
       <Route path="/" exact>
         <Projekt />
       </Route>
-      <Route path="/hiroshima/pomnik1" exact>
-        <HiroshimaPomnik1 />
+      <Route path="/hiroshima/sadako-sasaki" exact>
+        <SadakoSasaki />
       </Route>
-      <Route path="/hiroshima/pomnik2" exact>
-        <HiroshimaPomnik2 />
+      <Route path="/hiroshima/pomnik-pokoju" exact>
+        <HiroshimaPomnikPokoju />
+      </Route>
+      <Route path="/hiroshima/muzeum" exact>
+        <HiroshimaMuzeum />
       </Route>
       <Route path="/hiroshima/galeria" exact>
         <HiroshimaGalery />
       </Route>
-      <Route path="/nagasaki/pomnik1" exact>
-        <NagasakiPomnik1 />
+      <Route path="/nagasaki/kwiat-zycia-i-smierci" exact>
+        <KwiatZycia />
       </Route>
-      <Route path="/nagasaki/pomnik2" exact>
-        <NagasakiPomnik2 />
+      <Route path="/nagasaki/pomnik-pokoju" exact>
+        <NagasakiPomnikPokoju />
       </Route>
       <Route path="/nagasaki/galeria">
         <NagasakiGalery />
+      </Route>
+      <Route path="/nagasaki/muzeum">
+        <NagasakiMuzeum />
       </Route>
     </div>
   );
