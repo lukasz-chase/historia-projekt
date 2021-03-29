@@ -36,8 +36,10 @@ const FullImageModal = ({ currentIndex, modal, setModal, setCurrentIndex }) => {
         </div>
 
         <div className="image-details">
-          <span>{GalleryInfo[currentIndex].info}</span>
-          <span>źródło: {GalleryInfo[currentIndex].zrodlo}</span>
+          <span className="desc">{GalleryInfo[currentIndex].info}</span>
+          <span className="src">
+            źródło: {GalleryInfo[currentIndex].zrodlo}
+          </span>
         </div>
       </div>
       <div className="arrow-right">
@@ -61,7 +63,7 @@ const Modal = styled.div`
   height: 100%;
   display: ${({ modal }) => (modal ? "flex" : "none")};
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   z-index: 100;
   .close-icon {
     position: absolute;
@@ -79,25 +81,32 @@ const Modal = styled.div`
   .arrow-right {
     cursor: pointer;
     .arrow {
-      font-size: 3rem;
+      font-size: 5rem;
+      @media screen and (max-width: 1000px) {
+        font-size: 3rem;
+      }
     }
   }
   .arrow-left {
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(100%, 0);
     @media screen and (max-width: 1000px) {
       background-color: rgba(255, 255, 255, 0.6);
-      border-radius: 20px;
-      position: absolute;
-      top: 50%;
-      left: 0;
+      transform: translate(0, 0);
     }
   }
   .arrow-right {
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, 0);
     @media screen and (max-width: 1000px) {
       background-color: rgba(255, 255, 255, 0.6);
-      border-radius: 20px;
-      position: absolute;
-      top: 50%;
-      right: 0;
+      transform: translate(0, 0);
     }
   }
   .image {
@@ -110,6 +119,14 @@ const Modal = styled.div`
   .image-details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .desc {
+      width: 70%;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+    }
   }
 `;
 

@@ -63,6 +63,9 @@ const AboutComponent = styled.div`
       height: 30rem;
       width: 100%;
       object-fit: cover;
+      &:hover {
+        cursor: pointer;
+      }
       @media screen and (max-width: 1000px) {
         height: 10rem;
         width: 100%;
