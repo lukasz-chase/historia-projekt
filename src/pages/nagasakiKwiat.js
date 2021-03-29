@@ -7,32 +7,34 @@ import kwiat from "../images/KwiatMilosciIPokoju.NuclearFutures.org.jpg.jpg";
 
 const KwiatZycia = () => {
   return (
-    <NagasakiPage>
-      <h2>Kwiat życia i pokoju</h2>
-      <div className="text">
-        <span>
-          Pomnik "Kwiat życia i pokoju" Również znany pod nazwą Pomniku Ofiar
-          Nagasaki autorstwa Polaka Mariusza Kulpy, replika zrealizowanego
-          pomnika Dar Narodu Polskiego odsłoniętego w 1986 roku w Nagasaki,
-          upamiętniającego ofiary bomby atomowej z 1945 roku. Replika została
-          odsłonięta 9 VIII 1988 roku na skwerze między ulicami Szeroką i Św
-          Ducha, przedstawia metalową rzeźbę o wysokości 2m, w formie
-          skamieniałych liści symbolizujących zagłądę oraz wyrastającym nowym
-          kwiatem symbolem życia i odrodzenia. Początkowo przeznaczony do
-          Warszawy, ostatecznie stanął w Gdańku, portowym mieście, w którym 2WŚ
-          się rozpoczełą, zakończyła się natomiast w Nagasaki, innym portowym
-          mieście.
-        </span>
-        <div className="image">
-          <img src={kwiat} alt="kwiat milosci i pokoju" />
+    <>
+      <NagasakiPage>
+        <h2>Kwiat życia i pokoju</h2>
+        <div className="text">
+          <span>
+            Pomnik "Kwiat życia i pokoju" Również znany pod nazwą Pomniku Ofiar
+            Nagasaki autorstwa Polaka Mariusza Kulpy, replika zrealizowanego
+            pomnika Dar Narodu Polskiego odsłoniętego w 1986 roku w Nagasaki,
+            upamiętniającego ofiary bomby atomowej z 1945 roku. Replika została
+            odsłonięta 9 VIII 1988 roku na skwerze między ulicami Szeroką i Św
+            Ducha, przedstawia metalową rzeźbę o wysokości 2m, w formie
+            skamieniałych liści symbolizujących zagłądę oraz wyrastającym nowym
+            kwiatem symbolem życia i odrodzenia. Początkowo przeznaczony do
+            Warszawy, ostatecznie stanął w Gdańku, portowym mieście, w którym
+            2WŚ się rozpoczełą, zakończyła się natomiast w Nagasaki, innym
+            portowym mieście.
+          </span>
+          <div className="image">
+            <img src={kwiat} alt="kwiat milosci i pokoju" />
+          </div>
         </div>
-      </div>
+      </NagasakiPage>
       <Footer
         zrodlo={
           "https://www.gedanopedia.pl/gdansk/?title=POMNIK_%E2%80%9EKWIAT_%C5%BBYCIA_I_POKOJU%E2%80%9D"
         }
       />
-    </NagasakiPage>
+    </>
   );
 };
 
