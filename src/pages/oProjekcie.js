@@ -1,37 +1,41 @@
 import React from "react";
-//styling
+//styled
 import styled from "styled-components";
+//components
+import Header from "../components/Header";
+
 const Projekt = () => {
   return (
-    <AboutComponent>
-      <span>
+    <About>
+      <div className="header">O projekcie</div>
+      <Header color="black" />
+      <div className="text">
         Strona jest poświęcona rodzają pamięci ataku na Hiroshimę i Nagasaki.
         Przedstawia ona zdjęcia i opisy miejsc ważnych dla tych tragedii.
         Historia to nie tylko wielkie wydarzenia, dotykające całe społeczeństwo.
         Ciężką pracą na tej stronie zostały zgromadzone miejsca oraz zdjęcia,
         które można zobaczyć i dowiedzieć się więcej o nich.
-      </span>
-    </AboutComponent>
+      </div>
+    </About>
   );
 };
 
-const AboutComponent = styled.div`
+const About = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
-  span {
-    color: black;
-    text-align: center;
-    width: 50%;
+  flex-direction: column;
+  .header {
     font-size: 2rem;
-    b {
-      text-decoration: underline;
-    }
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-      font-size: 1.5rem;
-    }
+    font-weight: bold;
+    margin: 2rem 0;
+  }
+  .text {
+    width: 90%;
+    font-size: 2rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    line-height: 60px;
   }
 `;
 

@@ -6,12 +6,16 @@ import pomnikHiroshima1 from "../images/pomnikHiroshima1.jpg";
 import pomnikHiroshima2 from "../images/pomnikHiroshima2.jpg";
 //components
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const HiroshimaPomnikPokoju = () => {
   return (
     <>
       <HiroshimaPage>
         <h2>Pomnik pokoju</h2>
+        <div className="header">
+          <Header color="black" />
+        </div>
         <div className="text">
           <span>
             Pomnik Pokoju W Hiroshimie mieszczą się ruiny centrum wystawowego
@@ -22,6 +26,11 @@ const HiroshimaPomnikPokoju = () => {
             promocji przemysłu prefektury Hiroshima przez czeskiego architekta.
             Pięciopiętrowy secesyjny gmach z charakterystyczna 25-metrową kopułą
             stanał nad brzegiem rzeki Motoyasu w ruchliwej dzielnicy handlowej.
+          </span>
+          <img src={pomnikHiroshima1} alt="pomnikHiroshima1" />
+        </div>
+        <div className="text2">
+          <span>
             Wewnątrz wystawiano obiekty związane z przemysłem, prace
             rzemieślników z różnych regionów japonii a także dzieła sztuki.
             Eksplozja bomby miałą miejsce w bezpośredniej bliskości hali.
@@ -31,20 +40,10 @@ const HiroshimaPomnikPokoju = () => {
             zniszczeniu, Wskutek eksplozji zawalila się większość ścian, a z
             kopuły ostał się jej żelazny szkielet.
           </span>
-          <div className="images">
-            <img src={pomnikHiroshima1} alt="pomnikHiroshima1" />
-            <img src={pomnikHiroshima2} alt="pomnikHiroshima2" />
-          </div>
+          <img src={pomnikHiroshima2} alt="pomnikHiroshima2" />
         </div>
       </HiroshimaPage>
-      <Footer
-        zrodlo={
-          "https://pl.wikipedia.org/wiki/Muzeum_Pokoju_w_Hiroszimie?fbclid=IwAR0Tzw4qH3Jf5nSDLx4Va0yHnsbOQVGg0n5guH7w__B6RZsa0sUvT2LEKxg"
-        }
-        zrodlo2={
-          "https://pl.wikipedia.org/wiki/Muzeum_Pokoju_w_Hiroszimie?fbclid=IwAR3CavrETdRBHadLABcQSy-Ove_tOYYQa0bA6nRjtMweBEM8umTcwB4IPqY"
-        }
-      />
+      <Footer />
     </>
   );
 };
@@ -54,13 +53,17 @@ const HiroshimaPage = styled.div`
   justify-content: center;
   align-items: Center;
   flex-direction: column;
-  text-align: center;
-  min-height: 90vh;
+  min-height: 96vh;
+  background-color: gainsboro;
   h2 {
     padding: 1rem 0;
     text-transform: upperCase;
   }
-  .text {
+  .header {
+    width: 90%;
+  }
+  .text,
+  .text2 {
     width: 90%;
     padding: 1rem 0;
     display: flex;
@@ -71,18 +74,25 @@ const HiroshimaPage = styled.div`
       padding: 1rem;
       text-align: left;
       font-family: "Lato", sans-serif;
-      font-size: 1.5rem;
-      letter-spacing: 2px;
+      font-size: 1.3rem;
+      letter-spacing: 3px;
+      order: 2;
+      line-height: 30px;
     }
-    .images {
-      img {
-        height: 20rem;
-        width: 30rem;
-        @media screen and (max-width: 1000px) {
-          height: 10rem;
-          width: 20rem;
-        }
-      }
+    img {
+      order: 1;
+      height: 12rem;
+      width: 7rem;
+      object-fit: cover;
+      border: 1px solid black;
+    }
+  }
+  .text2 {
+    img {
+      order: 2;
+    }
+    span {
+      order: 1;
     }
   }
 `;

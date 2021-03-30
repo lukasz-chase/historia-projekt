@@ -1,15 +1,18 @@
 import React from "react";
 //styled
 import styled from "styled-components";
-import Footer from "../components/Footer";
 //images
 import kwiat from "../images/KwiatMilosciIPokoju.NuclearFutures.org.jpg.jpg";
+//components
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const KwiatZycia = () => {
   return (
     <>
       <NagasakiPage>
         <h2>Kwiat życia i pokoju</h2>
+        <Header color="black" />
         <div className="text">
           <span>
             Pomnik "Kwiat życia i pokoju" Również znany pod nazwą Pomniku Ofiar
@@ -29,11 +32,7 @@ const KwiatZycia = () => {
           </div>
         </div>
       </NagasakiPage>
-      <Footer
-        zrodlo={
-          "https://www.gedanopedia.pl/gdansk/?title=POMNIK_%E2%80%9EKWIAT_%C5%BBYCIA_I_POKOJU%E2%80%9D"
-        }
-      />
+      <Footer />
     </>
   );
 };
@@ -44,7 +43,8 @@ const NagasakiPage = styled.div`
   align-items: Center;
   flex-direction: column;
   text-align: center;
-  min-height: 90vh;
+  min-height: 96vh;
+  background-color: gainsboro;
   h2 {
     padding: 1rem 0;
     text-transform: upperCase;

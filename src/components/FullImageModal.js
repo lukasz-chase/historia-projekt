@@ -8,7 +8,7 @@ import {
   AiOutlineCloseSquare,
 } from "react-icons/ai";
 //data
-import { GalleryInfo } from "../components/HiroshimaData";
+import { GalleryInfo } from "./ImagesData";
 
 const FullImageModal = ({ currentIndex, modal, setModal, setCurrentIndex }) => {
   return (
