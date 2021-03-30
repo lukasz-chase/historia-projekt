@@ -26,11 +26,7 @@ const NagasakiMuzeum = () => {
           eksponowane w Międzynarodowym Domu Kultury, a od kwietnia 1996 Muzeum
           posiada własną siedzibę, w której znajdują się eksponaty, związane z
           historią powstania broni atomowej oraz z atakiem jądrowym na Nagasaki
-          i jego skutkami. Kiedy bomba została zrzucona 9 sierpnia 1945 o
-          godzinie 11:02:35, 20 dzielnic w promieniu jednego kilometra od
-          epicentrum zniszczyła wysoka temperatura i fala uderzeniowa wybuchu
-          jądrowego. Dzieła zniszczenia dopełniły pożary. Zginęło co najmniej 70
-          tysięcy osób. Muzeum pokazuje, jak wyglądało miasto przed
+          i jego skutkami. Muzeum pokazuje, jak wyglądało miasto przed
           zniszczeniem. Zbiory obrazują skutki bombardowania; jest tu replika
           zniszczonej wybuchem frontowej ściany Katedry Urakami, która
           znajdowała się 500 m od epicentrum wybuchu. Są tu także liczne spalone
@@ -95,7 +91,8 @@ const HiroshimaPage = styled.div`
     font-size: 1rem;
     font-family: "Lato", sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    line-height: 40px;
   }
   .images {
     display: flex;

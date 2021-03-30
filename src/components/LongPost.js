@@ -11,8 +11,8 @@ const Post = ({ source, alt, text, link, imgOrder, spanOrder, header }) => {
   return (
     <PostComponent
       to={link}
-      spanOrder={spanOrder}
-      imgOrder={imgOrder}
+      spanorder={spanOrder}
+      imgorder={imgOrder}
       onClick={() => linksHandler()}
     >
       <div className="img">
@@ -42,7 +42,7 @@ const PostComponent = styled(Link)`
     border: 1px solid white;
   }
   .img {
-    order: ${({ imgOrder }) => imgOrder};
+    order: ${({ imgorder }) => imgorder};
     display: flex;
     flex-direction: column;
     img {
@@ -66,7 +66,7 @@ const PostComponent = styled(Link)`
   }
 
   span {
-    order: ${({ spanOrder }) => spanOrder};
+    order: ${({ spanorder }) => spanorder};
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;

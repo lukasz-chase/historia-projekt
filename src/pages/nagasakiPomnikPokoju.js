@@ -15,10 +15,8 @@ const NagasakiPomnikPokoju = () => {
         <Header color="black" />
         <div className="text">
           <span>
-            Park Pokoju w Nagasaki` Założony w 1955 zlokalizowany w pobliżu
-            hipocentrum eksplozji, w parku znajduje się 10-metrowa statuła
-            Pokoju. W prawej ręce mierzy w zagrożenie bronią jądrową a lewą ręką
-            w niekończący się pokój. Łagodna twarz symbolizująca łaskę a
+            W prawej ręce mierzy w zagrożenie bronią jądrową a lewą ręką w
+            niekończący się pokój. Łagodna twarz symbolizująca łaskę a
             delikatnie zamknięte oczy modlą sięza spokój dusz ofiar bomby.
             Zgięta prawa noga i wyprostowana lewa noga oznaczają zarówno
             medytację, jak i inicjatywę, aby powstać i uratować ludzi na całym
@@ -59,6 +57,7 @@ const NagasakiPage = styled.div`
     font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     display: flex;
+    line-height: 40px;
     @media screen and (max-width: 1000px) {
       flex-direction: column;
     }
@@ -66,12 +65,12 @@ const NagasakiPage = styled.div`
       padding: 1rem;
       text-align: left;
       font-family: "Lato", sans-serif;
-      font-size: 1.5rem;
-      letter-spacing: 2px;
+      font-size: 1.3rem;
+      letter-spacing: 3px;
     }
     .image {
       img {
-        height: 20rem;
+        height: 25rem;
         width: 30rem;
         @media screen and (max-width: 1000px) {
           height: 15rem;

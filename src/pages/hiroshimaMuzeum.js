@@ -82,8 +82,9 @@ const HiroshimaPage = styled.div`
     padding: 1rem 0;
     font-size: 1rem;
     font-family: "Lato", sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    line-height: 40px;
     @media screen and (max-width: 1000px) {
       flex-direction: column;
       width: 95%;

@@ -2,17 +2,12 @@ import React, { useState } from "react";
 //styling
 import styled from "styled-components";
 //components
-import ImageBeforeAndAfter from "../components/ImageBeforeAndAfter";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 //data
 import { GalleryInfo } from "../components/ImagesData";
 //images
-import nagasakiBefore from "../images/nagasakiBefore.jpg";
-import nagasakiAfter from "../images/nagasakiAfter.jpg";
 import FullImageModal from "../components/FullImageModal";
-import hiroshimaBefore from "../images/hiroshimaBefore.JPG";
-import hiroshimaAfter from "../images/hiroshimaAfter.JPG";
 
 const Galeria = () => {
   //state
@@ -38,10 +33,6 @@ const Galeria = () => {
             />
           ))}
         </div>
-        <h1>Nagasaki przed i po</h1>
-        <ImageBeforeAndAfter before={nagasakiBefore} after={nagasakiAfter} />
-        <h1>Hiroshima przed i po</h1>
-        <ImageBeforeAndAfter before={hiroshimaBefore} after={hiroshimaAfter} />
         <FullImageModal
           setModal={setModal}
           modal={modal}
@@ -67,7 +58,7 @@ const AboutComponent = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
-    padding: 0 1rem;
+    padding: 1rem;
     @media screen and (max-width: 1000px) {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }

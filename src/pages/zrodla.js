@@ -11,8 +11,10 @@ const Zrodla = () => {
       <div className="header">Żródła</div>
       <Header color="black" />
       <div className="zrodla">
-        {zrodlaProjektu.map((zrodlo) => (
-          <span className="zrodlo">{zrodlo.src}</span>
+        {zrodlaProjektu.map((zrodlo, index) => (
+          <span className="zrodlo" key={index}>
+            {zrodlo.src}
+          </span>
         ))}
       </div>
     </ZrodlaComponent>

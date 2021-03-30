@@ -111,7 +111,7 @@ const Modal = styled.div`
   }
   .image {
     img {
-      max-height: 40rem;
+      max-height: 30rem;
       max-width: 30rem;
       object-fit: cover;
     }

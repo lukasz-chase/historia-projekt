@@ -18,14 +18,12 @@ const HiroshimaPomnikPokoju = () => {
         </div>
         <div className="text">
           <span>
-            Pomnik Pokoju W Hiroshimie mieszczą się ruiny centrum wystawowego
-            zachowane jako pomnik upamiętniający zrzucenie bomb na Hiroshime i
-            Nagasaki, należy do Parku Pamięci Pokoju w Hiroshimie. W 1996r.
-            pomnik został wpisany na liste światowego dziedzictwa UNESCO. Owy
-            pomnik był niegdyś centrum wystawowym zaprojektowanym w celu
-            promocji przemysłu prefektury Hiroshima przez czeskiego architekta.
-            Pięciopiętrowy secesyjny gmach z charakterystyczna 25-metrową kopułą
-            stanał nad brzegiem rzeki Motoyasu w ruchliwej dzielnicy handlowej.
+            W 1996r. pomnik został wpisany na liste światowego dziedzictwa
+            UNESCO. Owy pomnik był niegdyś centrum wystawowym zaprojektowanym w
+            celu promocji przemysłu prefektury Hiroshima przez czeskiego
+            architekta. Pięciopiętrowy secesyjny gmach z charakterystyczna
+            25-metrową kopułą stanał nad brzegiem rzeki Motoyasu w ruchliwej
+            dzielnicy handlowej.
           </span>
           <img src={pomnikHiroshima1} alt="pomnikHiroshima1" />
         </div>
@@ -77,7 +75,7 @@ const HiroshimaPage = styled.div`
       font-size: 1.3rem;
       letter-spacing: 3px;
       order: 2;
-      line-height: 30px;
+      line-height: 40px;
     }
     img {
       order: 1;

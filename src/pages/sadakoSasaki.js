@@ -14,16 +14,13 @@ const SadakoSasaki = () => {
         <Header color="black" />
         <div className="text">
           <span>
-            Sadako W 1958 roku powstał pomnik Sadako Sasaki, japońskiej
-            dziewczynki która w wieku 2 lat przeżyła wybuch bobmy atomowej
-            zrzuconej na Hiroshime. Pomnik powstał z funduszy zebranych przez
-            przyjaciół dziewczyny jak i wielu innych młodych Japończyków. Owy
-            pomnik stoi w parku w Hiroshimie. Jest to ogromny trójnogi postument
-            na którym znajduje się rzeźba dziewczynki trzymająca nad głową
-            ogromnego żurawia origami. Na owym pomniku widnieje napis: "To jest
-            nasz płacz, to jest nasza modlitwa, pokój na świecie". Ludzie
-            przynoszą pod pomnik papierowe żurawie które są symbolem szczęścia
-            oraz długowieczności.
+            Pomnik powstał z funduszy zebranych przez przyjaciół dziewczyny jak
+            i wielu innych młodych Japończyków. Owy pomnik stoi w parku w
+            Hiroshimie. Jest to ogromny trójnogi postument na którym znajduje
+            się rzeźba dziewczynki trzymająca nad głową ogromnego żurawia
+            origami. Na owym pomniku widnieje napis: "To jest nasz płacz, to
+            jest nasza modlitwa, pokój na świecie". Ludzie przynoszą pod pomnik
+            papierowe żurawie które są symbolem szczęścia oraz długowieczności.
           </span>
           <div className="images">
             <img src={sadako} alt="sadako sasaki" />
@@ -59,8 +56,8 @@ const HiroshimaPage = styled.div`
     }
     span {
       text-align: left;
-      line-height: 30px;
-      letter-spacing: 5px;
+      line-height: 40px;
+      letter-spacing: 3px;
       font-family: "Lato", sans-serif;
     }
     img {
