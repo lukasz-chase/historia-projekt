@@ -35,6 +35,9 @@ const PostComponent = styled(Link)`
   text-decoration: none;
   color: black;
   background-color: rgba(255, 255, 255, 1);
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
   &:hover {
     border: 1px solid white;
   }
@@ -48,9 +51,17 @@ const PostComponent = styled(Link)`
       object-fit: cover;
       align-self: flex-end;
       order: 2;
+      @media screen and (max-width: 1000px) {
+        height: 15rem;
+        width: 10rem;
+        align-self: center;
+      }
     }
     span {
       order: 1;
+      @media screen and (max-width: 1000px) {
+        align-self: center;
+      }
     }
   }
 
@@ -65,6 +76,11 @@ const PostComponent = styled(Link)`
     align-items: center;
     margin-left: 3rem;
     line-height: 40px;
+    @media screen and (max-width: 1000px) {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0.5rem;
+    }
   }
 `;
 

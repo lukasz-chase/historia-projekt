@@ -29,7 +29,7 @@ const NagasakiPomnikPokoju = () => {
             kraje z całęgo świata do dorzucenia swoich symboli. Takich jak:
             Relief of Friendship z Porto, Portugali/Joy of Life z
             Czechosłowacji/A Call z Bługarii/Flower of Love and Peace z Polski i
-            wiele innych. https://en.wikipedia.org/wiki/Nagasaki_Peace_Park
+            wiele innych.
           </span>
           <div className="image">
             <img src={statua} alt="statua pokoju" />
@@ -59,6 +59,9 @@ const NagasakiPage = styled.div`
     font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     display: flex;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
     span {
       padding: 1rem;
       text-align: left;
@@ -71,7 +74,7 @@ const NagasakiPage = styled.div`
         height: 20rem;
         width: 30rem;
         @media screen and (max-width: 1000px) {
-          height: 10rem;
+          height: 15rem;
           width: 20rem;
         }
       }

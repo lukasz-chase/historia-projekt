@@ -54,6 +54,9 @@ const HiroshimaPage = styled.div`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
     span {
       text-align: left;
       line-height: 30px;
@@ -64,6 +67,11 @@ const HiroshimaPage = styled.div`
       height: 30rem;
       width: 30rem;
       object-fit: cover;
+      @media screen and (max-width: 1000px) {
+        height: 25rem;
+        width: 20rem;
+        padding: 1rem 0;
+      }
     }
   }
 `;

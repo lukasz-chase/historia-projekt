@@ -27,4 +27,7 @@ export const zrodlaProjektu = [
     src:
       "https://en.wikipedia.org/wiki/Nagasaki_Peace_Park?fbclid=IwAR3QMbuohWllaAqyrEksrsSIXPuQ7C4vsiPqxXrzeK2FxtWTL9qstqzi2UM",
   },
+  {
+    src: "https://en.wikipedia.org/wiki/Nagasaki_Peace_Park",
+  },
 ];

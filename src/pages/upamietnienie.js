@@ -63,6 +63,9 @@ const Component = styled.div`
     justify-content: center;
     align-items: center;
     letter-spacing: 3px;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
     span {
       font-family: "Lato", sans-serif;
       line-height: 30px;

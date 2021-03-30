@@ -73,8 +73,15 @@ const AboutComponent = styled.div`
     align-items: center;
     width: 90%;
     color: white;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      padding: 1rem;
+    }
     h1 {
       font-size: 2.6rem;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+      }
     }
     .spans {
       span {
@@ -97,6 +104,9 @@ const AboutComponent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
   }
 `;
 

@@ -25,8 +25,8 @@ const Hiroshima = () => {
           wprowadzająca, Niebezpieczeństwa związane z bronią jądrową i
           Historia Hiroszimy."
           link="/hiroshima/muzeum"
-          imgOrder="2"
-          spanOrder="1"
+          imgOrder="1"
+          spanOrder="2"
         />
         <LongPost
           source={pokoju}
@@ -36,8 +36,8 @@ const Hiroshima = () => {
             zachowane jako pomnik upamiętniający zrzucenie bomb na Hiroshime i
             Nagasaki, należy do Parku Pamięci Pokoju w Hiroshimie"
           link="/hiroshima/pomnik-pokoju"
-          imgOrder="1"
-          spanOrder="2"
+          imgOrder="2"
+          spanOrder="1"
         />
         <LongPost
           source={sadako}
