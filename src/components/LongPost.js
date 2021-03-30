@@ -11,6 +11,7 @@ const Post = ({ source, alt, text, link, imgOrder, spanOrder, header }) => {
   return (
     <PostComponent
       to={link}
+      disabled
       spanorder={spanOrder}
       imgorder={imgOrder}
       onClick={() => linksHandler()}

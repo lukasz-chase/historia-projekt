@@ -16,6 +16,7 @@ import nagasakiAfter from "../images/nagasakiAfter.jpg";
 import ksiazkaHiroshima from "../images/ksiazkaHiroshima.jpg";
 import dziennikHiroshima from "../images/dziennikHiroshima.jpg";
 import smiercHiroshima from "../images/smiercHiroshima.jpg";
+import prank from "../images/prank.png";
 
 const Upamietnienie = () => {
   return (
@@ -47,7 +48,12 @@ const Upamietnienie = () => {
             Nauczycielka która powraca do miasta w gorzki sposób dowiaduje się
             jak promieniowanie wpłyneło na życie ocalałych.
           </span>
-          <img src={barefoot} alt="bare foot" />
+          <img
+            src={barefoot}
+            alt="bare foot"
+            onMouseOver={(e) => (e.currentTarget.src = `${prank}`)}
+            onMouseOut={(e) => (e.currentTarget.src = `${barefoot}`)}
+          />
         </div>
         <h2 className="info">
           Tragedia w Hiroshimie i Nagasaki przyczyniła się do światowego
@@ -65,7 +71,7 @@ const Upamietnienie = () => {
             opowieściach sześciorga osób, którzy makabryczne szczegóły eksplozji
             będą pamiętać już zawsze. Choć cudem przeżyli ten koszmar, to trudno
             ocenić, czy był to dar, czy przekleństwo."
-            link={false}
+            link="/upamietnienie"
             header="John Hersey `Hiroshima`"
             imgOrder="1"
             spanOrder="2"
@@ -74,7 +80,7 @@ const Upamietnienie = () => {
             source={dziennikHiroshima}
             alt="hiroshima"
             text="Owy dziennik został napisany 2 miesiące po wybuchu bomb atomowych przez dr. Michihiko. Opisuje w nim ona swoje przeżycia i powolny powrót do normalności w Hiroshimie oraz przeżycia jak i śmierci wielu pacjentów w jej szpitalu."
-            link={false}
+            link="/upamietnienie"
             header="Michihiko Hachiya Hiroshima `Diary: The Journal of a Japanese Physician`"
             imgOrder="2"
             spanOrder="1"
@@ -83,7 +89,7 @@ const Upamietnienie = () => {
             source={smiercHiroshima}
             alt="hiroshima"
             text="W Japonii hibakusha oznacza ludzie pod wpływem eksplozji, zwłaszcza podczas eksplozji w 1945 w Hiroshimie. To opracowanie pokazuje psychologiczne strony 90 tyś ocaleńców"
-            link={false}
+            link="/upamietnienie"
             header="Robert Jay Lifton
            `Death in Life: Survivors of Hiroshima`"
             imgOrder="1"
@@ -126,6 +132,20 @@ const Upamietnienie = () => {
             alt="Fat Man and Little Boy"
           />
         </div>
+        <a
+          className="link"
+          href="https://manggha.pl"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Muzeum Manggha założone przez Andrzeja Wajdę jest największym w Polsce
+          miejscem gdzie pamięć, sztuka oraz kultura Japonii jest dostępna dla
+          każdego Polaka. W Muzeum można zwiedzić wystawy stałe które poświęcone
+          są przeróżnym momentom w historii Japonii. Trzesienie z 2011, Nagasaki
+          i Hiroshima jak i era Siogunatu. Jest to miejsce w którym obchodzono
+          również stulecie stosunków dyplomatycznych pomiędzy Japonią i Polską w
+          2019 23trzeciego Października.
+        </a>
         <div className="beforeAndAfter">
           <div className="hiroshima">
             <h1>Hiroshima przed i po</h1>
@@ -172,9 +192,16 @@ const Component = styled.div`
     }
     span {
       font-family: "Lato", sans-serif;
+      padding: 0 5rem;
     }
     img {
-      padding: 1rem;
+      height: 35rem;
+      width: 30rem;
+      object-fit: cover;
+      @media screen and (max-width: 1000px) {
+        height: 25rem;
+        width: 20rem;
+      }
     }
   }
   h2 {
@@ -202,6 +229,43 @@ const Component = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .link {
+    width: 90%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+    border: 1px solid white;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    &::before {
+      -webkit-transition: 0.5s all ease;
+      transition: 0.5s all ease;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      content: "Przejdź do strony";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      background-color: white;
+    }
+    &:hover {
+      border: 1px solid black;
+      &:before {
+        -webkit-transition: 0.5s all ease;
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+      }
+    }
   }
 `;
 
