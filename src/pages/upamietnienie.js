@@ -196,7 +196,7 @@ const Component = styled.div`
     }
     img {
       height: 35rem;
-      width: 30rem;
+      width: 25rem;
       object-fit: cover;
       @media screen and (max-width: 1000px) {
         height: 25rem;
