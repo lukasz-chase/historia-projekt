@@ -60,6 +60,9 @@ const PostComponent = styled(Link)`
     }
     span {
       order: 1;
+      font-size: 1rem;
+      line-height: 15px;
+      padding: 20px 0;
       @media screen and (max-width: 1000px) {
         align-self: center;
       }

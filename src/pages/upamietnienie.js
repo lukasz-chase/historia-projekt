@@ -144,7 +144,7 @@ const Upamietnienie = () => {
           są przeróżnym momentom w historii Japonii. Trzesienie z 2011, Nagasaki
           i Hiroshima jak i era Siogunatu. Jest to miejsce w którym obchodzono
           również stulecie stosunków dyplomatycznych pomiędzy Japonią i Polską w
-          2019 23trzeciego Października.
+          2019 23 Października.
         </a>
         <div className="beforeAndAfter">
           <div className="hiroshima">
